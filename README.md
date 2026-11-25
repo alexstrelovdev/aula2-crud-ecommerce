@@ -1,54 +1,31 @@
 
 # Loja - Aula 2
 
-Projeto desenvolvido na disciplina de Programação Web, dando continuidade ao projeto iniciado em sala de aula.
+Atividade da disciplina de Programação Web.
 
-## Funcionalidades
+O projeto consiste em um sistema de cadastro de produtos e uma loja virtual com carrinho de compras e registro de vendas, utilizando como base o projeto da aula 2.
 
-- Cadastro, listagem, edição e exclusão de produtos;
-- Cadastro de imagens nos formatos JPEG e PNG;
-- Validação do preço dos produtos;
-- Carrinho de compras;
-- Finalização e registro das vendas.
+## Tecnologias
 
-## Tecnologias utilizadas
-
-- React
-- Bootstrap
-- Axios
-- Node.js
-- Express
-- Sequelize
-- MariaDB
+React, Bootstrap, Axios, Node.js, Express, Sequelize e MariaDB.
 
 ## Como executar
 
-Primeiro, crie o banco de dados no MariaDB:
+É necessário ter o Node.js e o MariaDB instalados.
 
-```sql
-CREATE DATABASE IF NOT EXISTS loja;
-```
+Crie um banco de dados chamado `loja` e configure as variáveis DB_NAME, DB_USER, DB_PASSWORD e DB_HOST de acordo com seu banco.
 
-### API
-
-Acesse a pasta Api:
+### Back-end
 
 ```bash
 cd Api
 npm install
-```
-
-Configure as variáveis DB_NAME, DB_USER, DB_PASSWORD e DB_HOST de acordo com o seu banco de dados.
-
-Depois, inicie a API:
-
-```bash
 npm start
 ```
 
 ### Front-end
 
-Em outro terminal, a partir da pasta principal do projeto:
+Em outro terminal:
 
 ```bash
 cd FrontEnd
@@ -56,11 +33,9 @@ npm install
 npm start
 ```
 
-## Rotas
+## Acesso
 
 - Loja: http://localhost:3000/home
-- Produtos: http://localhost:3000/produtos
-- API: http://localhost:5000
+- Cadastro de produtos: http://localhost:3000/produtos
 
-As tabelas do banco são criadas automaticamente pelo Sequelize ao iniciar a API.
-
+A API roda na porta 5000 e as tabelas são criadas automaticamente pelo Sequelize.
